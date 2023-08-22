@@ -32,7 +32,7 @@ var details = [
 ];
 
 var FilteredData = details.filter(function (element) {
-  return element.brand == "Apple" || element.brand == "Samsung"&& element.price > 80000;
+  return (element.brand == "Apple" || element.brand == "Samsung") && element.price > 80000;
 });
 
 console.log(FilteredData);
